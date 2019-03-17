@@ -1,0 +1,149 @@
+
+	body{
+		transition: background-color 5s ease-in-out;
+		overflow-x: hidden;
+		background-color: rgba(165, 140, 244, 0.082745);
+	}
+	.bg{
+		width: 100%;
+		height: 750px;
+		transition: opacity 3s ease-in-out, transform 3s linear;
+		background-image: url(../img/bg2.png);
+		animation: op 25s linear infinite;
+		position: absolute;
+		z-index: -1;
+		object-fit: cover;
+
+	}
+	@keyframes op{
+		0%{opacity: 0;
+			transform: scale(1);}
+		25%{opacity: .64;}
+		55%{opacity: .54;
+			transform: scale(1.2);}
+		75%{opacity: .44;}
+		100%{opacity: 0;
+		transform: scale(1.4);}
+	}
+	form{
+		background: #fdfdfd;
+		margin: 20px auto;
+		width: 100%;
+		max-width: 600px;
+		padding: 30px 50px;
+		box-shadow: 0 0 15px 0 rgba(100, 100, 100, .12);
+		border-radius: 15px;
+	}
+	fieldset{
+		margin-bottom: 10px;
+	}
+	input, select, textarea{
+		width: 100%;
+		padding: 5px;
+		border-radius: 5px;
+	}
+	select{
+		overflow: hidden;
+		padding: 0;
+	}
+	select option{
+		padding: 2px 5px;
+	}
+	.form-control:hover,
+	textarea:hover,
+	select:hover{
+		background-color: #fafaff;
+	}
+	option:hover{
+		background-color: #efefef;
+	}
+	.col-sm-6:first-of-type .form-control{
+		width: 95%;
+	}
+	i+p{
+		display: inline;
+	}
+	label{
+		display: inline-block;
+		width: 100%;
+	}
+	label[for="login"]:after,
+	label[for="password"]:after,
+	label[for="password-confirm"]:after,
+	label[for="name"]:after,
+	label[for="surname"]:after,
+	label[for="birthdate"]:after,
+	label[for="phone"]:after,
+	label[for="event"]:after,
+	label[for="eventdate"]:after,
+	label[for="autocomplete"]:after,
+	label[for="rate"]:after,
+	label[for="email"]:after{
+		content: '';
+		width: 5px;
+		height: 5px;
+		top: -7px;
+		display: inline-block;
+		z-index: 1;
+		position: relative;
+		background: #ff9999;
+		border-radius: 40%;
+	}
+	.help-block.error{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.help-block.error:first-of-type{
+		margin-top: 5px;
+	}
+	.btn{
+		width: 140px;
+	}
+	#submit:active,
+	#reset:active{
+		background-color: #ececff;
+		border-color: #66afe9;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	}
+	#submit:focus, #submit:hover,
+	#reset:focus, #reset:hover{
+		background: #fafaff;
+	}
+	.messages{
+		font-size: .95em;
+		padding-left: 5px;
+	}
+	.gI, .rI, .eI{
+		display: inline-block;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+	}
+	.gI{  background: #5c5; }
+	.rI{  background: #c55; }
+	.eI{  background: #bbb; }
+
+	.indicators{
+		display: inline-block;
+		position: fixed;
+		left: 230px;
+		bottom: 55%;
+		transition: bottom .6s ease;
+		opacity: .95;
+	}
+.alert{
+	color: #f55;
+	margin: 0;
+	margin-bottom: 3px;
+	padding: 0;
+	padding-left: 10px;
+	border-bottom: 1px solid #bbb;
+}
+.info{
+	color: #5f5fFf;
+}
+select:-internal-list-box option:checked  {
+	background: #653 !important;
+}
+
+
